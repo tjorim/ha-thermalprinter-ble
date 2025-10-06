@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "bluetooth_confirm": {
+        "description": "Do you want to set up {name}?"
+      },
+      "user": {
+        "data": {
+          "address": "Device"
+        },
+        "description": "Select your thermal printer"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to printer",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "no_devices_found": "No thermal printers found"
+    }
+  }
+}

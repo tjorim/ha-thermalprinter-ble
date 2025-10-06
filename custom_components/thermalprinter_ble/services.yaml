@@ -1,0 +1,48 @@
+print_text:
+  name: Print Text
+  description: Print text to the thermal printer
+  fields:
+    device_id:
+      name: Device
+      description: The printer device
+      required: true
+      selector:
+        device:
+          integration: thermalprinter_ble
+    text:
+      name: Text
+      description: Text to print
+      required: true
+      example: "Hello World"
+      selector:
+        text:
+          multiline: true
+    font_size:
+      name: Font Size
+      description: Font size in points
+      required: false
+      default: 24
+      selector:
+        number:
+          min: 12
+          max: 72
+          step: 1
+
+print_image:
+  name: Print Image
+  description: Print an image to the thermal printer
+  fields:
+    device_id:
+      name: Device
+      description: The printer device
+      required: true
+      selector:
+        device:
+          integration: thermalprinter_ble
+    image_path:
+      name: Image Path
+      description: Path to the image file
+      required: true
+      example: "/config/www/qrcode.png"
+      selector:
+        text:

@@ -1,0 +1,7 @@
+{
+  "name": "Thermal Printer (BLE)",
+  "render_readme": true,
+  "domains": ["sensor"],
+  "iot_class": "Local Push",
+  "homeassistant": "2023.9.0"
+}
